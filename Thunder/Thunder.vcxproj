@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dist|x64">
+      <Configuration>Dist</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9F49F740-0B29-76DC-1441-01B3809FDC3D}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Thunder</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\bin\Debug-windows-x86_64\Thunder\</OutDir>
+    <IntDir>..\bin-int\Debug-windows-x86_64\Thunder\</IntDir>
+    <TargetName>Thunder</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\bin\Release-windows-x86_64\Thunder\</OutDir>
+    <IntDir>..\bin-int\Release-windows-x86_64\Thunder\</IntDir>
+    <TargetName>Thunder</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <OutDir>..\bin\Dist-windows-x86_64\Thunder\</OutDir>
+    <IntDir>..\bin-int\Dist-windows-x86_64\Thunder\</IntDir>
+    <TargetName>Thunder</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>td_pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>TD_PLATFORM_WINDOWS;TD_BUILD_DLL;GLFW_INCLUDE_NONE;_CRT_SECURE_NO_WARNINGS;TD_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;vendor\glm;vendor\stb_image;vendor\EnTT\include;vendor\yaml-cpp\include;vendor\ImGuizmo;vendor\Box2D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>td_pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>TD_PLATFORM_WINDOWS;TD_BUILD_DLL;GLFW_INCLUDE_NONE;_CRT_SECURE_NO_WARNINGS;TD_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;vendor\glm;vendor\stb_image;vendor\EnTT\include;vendor\yaml-cpp\include;vendor\ImGuizmo;vendor\Box2D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>td_pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>TD_PLATFORM_WINDOWS;TD_BUILD_DLL;GLFW_INCLUDE_NONE;_CRT_SECURE_NO_WARNINGS;TD_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;vendor\glm;vendor\stb_image;vendor\EnTT\include;vendor\yaml-cpp\include;vendor\ImGuizmo;vendor\Box2D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLFramebuffer.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLShader.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLTexture.h" />
+    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
+    <ClInclude Include="src\Thunder.h" />
+    <ClInclude Include="src\Thunder\Core\Application.h" />
+    <ClInclude Include="src\Thunder\Core\Config.h" />
+    <ClInclude Include="src\Thunder\Core\Core.h" />
+    <ClInclude Include="src\Thunder\Core\CoreConfig.h" />
+    <ClInclude Include="src\Thunder\Core\EntryPoint.h" />
+    <ClInclude Include="src\Thunder\Core\GUID.h" />
+    <ClInclude Include="src\Thunder\Core\Input.h" />
+    <ClInclude Include="src\Thunder\Core\KeyCodes.h" />
+    <ClInclude Include="src\Thunder\Core\Layer.h" />
+    <ClInclude Include="src\Thunder\Core\LayerStack.h" />
+    <ClInclude Include="src\Thunder\Core\Log.h" />
+    <ClInclude Include="src\Thunder\Core\MouseButtonCodes.h" />
+    <ClInclude Include="src\Thunder\Scene\SceneState.h" />
+    <ClInclude Include="src\Thunder\Core\Timestep.h" />
+    <ClInclude Include="src\Thunder\Core\Window.h" />
+    <ClInclude Include="src\Thunder\Debug\Profiling.h" />
+    <ClInclude Include="src\Thunder\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Thunder\Events\Event.h" />
+    <ClInclude Include="src\Thunder\Events\KeyEvent.h" />
+    <ClInclude Include="src\Thunder\Events\MouseEvent.h" />
+    <ClInclude Include="src\Thunder\ImGui\CustomImGuiWidgets.h" />
+    <ClInclude Include="src\Thunder\ImGui\ImGuiConfig.h" />
+    <ClInclude Include="src\Thunder\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\Thunder\Math\MatrixDecompose.h" />
+    <ClInclude Include="src\Thunder\Projects\Project.h" />
+    <ClInclude Include="src\Thunder\Projects\ProjectSerializer.h" />
+    <ClInclude Include="src\Thunder\Renderer\Buffer.h" />
+    <ClInclude Include="src\Thunder\Renderer\Camera.h" />
+    <ClInclude Include="src\Thunder\Renderer\Framebuffer.h" />
+    <ClInclude Include="src\Thunder\Renderer\GraphicsContext.h" />
+    <ClInclude Include="src\Thunder\Renderer\OrthographicCamera.h" />
+    <ClInclude Include="src\Thunder\Renderer\OrthographicCameraController.h" />
+    <ClInclude Include="src\Thunder\Renderer\Renderer.h" />
+    <ClInclude Include="src\Thunder\Renderer\Renderer2D.h" />
+    <ClInclude Include="src\Thunder\Renderer\RendererAPI.h" />
+    <ClInclude Include="src\Thunder\Renderer\Shader.h" />
+    <ClInclude Include="src\Thunder\Renderer\ShaderLibrary.h" />
+    <ClInclude Include="src\Thunder\Renderer\SubTexture2D.h" />
+    <ClInclude Include="src\Thunder\Renderer\Texture.h" />
+    <ClInclude Include="src\Thunder\Renderer\VertexArray.h" />
+    <ClInclude Include="src\Thunder\Scene\Components.h" />
+    <ClInclude Include="src\Thunder\Scene\EditorCamera.h" />
+    <ClInclude Include="src\Thunder\Scene\Entity.h" />
+    <ClInclude Include="src\Thunder\Scene\Scene.h" />
+    <ClInclude Include="src\Thunder\Scene\SceneCamera.h" />
+    <ClInclude Include="src\Thunder\Scene\SceneSerializer.h" />
+    <ClInclude Include="src\Thunder\Scene\ScriptableComponent.h" />
+    <ClInclude Include="src\Thunder\Utils\PlatformUtils.h" />
+    <ClInclude Include="src\td_pch.h" />
+    <ClInclude Include="vendor\ImGuizmo\ImGuizmo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLFramebuffer.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLShader.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLTexture.cpp" />
+    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsUtils.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
+    <ClCompile Include="src\Thunder\Core\Application.cpp" />
+    <ClCompile Include="src\Thunder\Core\Config.cpp" />
+    <ClCompile Include="src\Thunder\Core\GUID.cpp" />
+    <ClCompile Include="src\Thunder\Core\Input.cpp" />
+    <ClCompile Include="src\Thunder\Core\Layer.cpp" />
+    <ClCompile Include="src\Thunder\Core\LayerStack.cpp" />
+    <ClCompile Include="src\Thunder\Core\Log.cpp" />
+    <ClCompile Include="src\Thunder\Debug\Profiling.cpp" />
+    <ClCompile Include="src\Thunder\ImGui\ImGuiBuild.cpp" />
+    <ClCompile Include="src\Thunder\ImGui\ImGuiConfig.cpp" />
+    <ClCompile Include="src\Thunder\ImGui\ImGuiLayer.cpp" />
+    <ClCompile Include="src\Thunder\Projects\ProjectSerializer.cpp" />
+    <ClCompile Include="src\Thunder\Renderer\Buffer.cpp" />
+    <ClCompile Include="src\Thunder\Renderer\Framebuffer.cpp" />
+    <ClCompile Include="src\Thunder\Renderer\OrthographicCamera.cpp" />
+    <ClCompile Include="src\Thunder\Renderer\OrthographicCameraController.cpp" />
+    <ClCompile Include="src\Thunder\Renderer\Renderer.cpp" />
+    <ClCompile Include="src\Thunder\Renderer\Renderer2D.cpp" />
+    <ClCompile Include="src\Thunder\Renderer\Shader.cpp" />
+    <ClCompile Include="src\Thunder\Renderer\ShaderLibrary.cpp" />
+    <ClCompile Include="src\Thunder\Renderer\SubTexture2D.cpp" />
+    <ClCompile Include="src\Thunder\Renderer\Texture.cpp" />
+    <ClCompile Include="src\Thunder\Renderer\VertexArray.cpp" />
+    <ClCompile Include="src\Thunder\Scene\EditorCamera.cpp" />
+    <ClCompile Include="src\Thunder\Scene\Entity.cpp" />
+    <ClCompile Include="src\Thunder\Scene\Scene.cpp" />
+    <ClCompile Include="src\Thunder\Scene\SceneCamera.cpp" />
+    <ClCompile Include="src\Thunder\Scene\SceneSerializer.cpp" />
+    <ClCompile Include="src\td_pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vendor\ImGuizmo\ImGuizmo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">
+      <Project>{154B857C-0182-860D-AA6E-6C109684020F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="vendor\imgui\ImGui.vcxproj">
+      <Project>{C0FF640D-2C14-8DBE-F595-301E616989EF}</Project>
+    </ProjectReference>
+    <ProjectReference Include="vendor\Glad\Glad.vcxproj">
+      <Project>{BDD6857C-A90D-870D-52FA-6C103E10030F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="vendor\yaml-cpp\yaml-cpp.vcxproj">
+      <Project>{88F1A057-74BE-FB62-9DD7-E90A890331F1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="vendor\Box2D\Box2D.vcxproj">
+      <Project>{A434E80C-1049-10BE-D9CA-B31D459E0CEF}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

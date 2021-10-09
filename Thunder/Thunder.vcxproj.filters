@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform">
+      <UniqueIdentifier>{21CA02E5-0D2D-9289-B6B2-CA3FA2F45D0C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\OpenGL">
+      <UniqueIdentifier>{35A49437-A105-7245-2A73-B8F796D3A804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform\Windows">
+      <UniqueIdentifier>{5B054582-4794-CE4B-F0B2-E246DC20DFF1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Thunder">
+      <UniqueIdentifier>{B649314A-22FF-A93F-ABF3-A31617A8A043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Thunder\Core">
+      <UniqueIdentifier>{CEEF6A45-BAE8-8997-E31A-6F1CCF7269A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Thunder\Debug">
+      <UniqueIdentifier>{AC44D5F2-185B-D388-61D2-5EAACD27A410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Thunder\Events">
+      <UniqueIdentifier>{DA2C0851-C610-C9A6-2F71-C3F91B74B328}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Thunder\ImGui">
+      <UniqueIdentifier>{60AF33F3-CCC5-3189-153D-BDAA81920211}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Thunder\Math">
+      <UniqueIdentifier>{4F307045-3B29-8F97-645B-741C50B36EA3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Thunder\Projects">
+      <UniqueIdentifier>{EFC3B4BD-DB52-3E87-8471-528270DF4E2D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Thunder\Renderer">
+      <UniqueIdentifier>{1CDAC1AA-0869-4B74-B187-5F6F9DF55B1A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Thunder\Scene">
+      <UniqueIdentifier>{53A7E3F3-BFBD-E189-0835-6DAB748AB211}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Thunder\Utils">
+      <UniqueIdentifier>{963B11F4-0252-0F8A-4BC9-9AABB71EE011}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor">
+      <UniqueIdentifier>{B3738122-9F15-ACF8-88D0-BF4C74113349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\ImGuizmo">
+      <UniqueIdentifier>{73BF7F4C-DF4A-ED10-E85B-700554664911}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLContext.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLFramebuffer.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLRendererAPI.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLShader.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLTexture.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\OpenGLVertexArray.h">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>src\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Core\Application.h">
+      <Filter>src\Thunder\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Core\Config.h">
+      <Filter>src\Thunder\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Core\Core.h">
+      <Filter>src\Thunder\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Core\CoreConfig.h">
+      <Filter>src\Thunder\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Core\EntryPoint.h">
+      <Filter>src\Thunder\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Core\GUID.h">
+      <Filter>src\Thunder\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Core\Input.h">
+      <Filter>src\Thunder\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Core\KeyCodes.h">
+      <Filter>src\Thunder\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Core\Layer.h">
+      <Filter>src\Thunder\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Core\LayerStack.h">
+      <Filter>src\Thunder\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Core\Log.h">
+      <Filter>src\Thunder\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Core\MouseButtonCodes.h">
+      <Filter>src\Thunder\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Core\Timestep.h">
+      <Filter>src\Thunder\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Core\Window.h">
+      <Filter>src\Thunder\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Debug\Profiling.h">
+      <Filter>src\Thunder\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Events\ApplicationEvent.h">
+      <Filter>src\Thunder\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Events\Event.h">
+      <Filter>src\Thunder\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Events\KeyEvent.h">
+      <Filter>src\Thunder\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Events\MouseEvent.h">
+      <Filter>src\Thunder\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\ImGui\CustomImGuiWidgets.h">
+      <Filter>src\Thunder\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\ImGui\ImGuiConfig.h">
+      <Filter>src\Thunder\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\ImGui\ImGuiLayer.h">
+      <Filter>src\Thunder\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Math\MatrixDecompose.h">
+      <Filter>src\Thunder\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Projects\Project.h">
+      <Filter>src\Thunder\Projects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Projects\ProjectSerializer.h">
+      <Filter>src\Thunder\Projects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Renderer\Buffer.h">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Renderer\Camera.h">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Renderer\Framebuffer.h">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Renderer\GraphicsContext.h">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Renderer\OrthographicCamera.h">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Renderer\OrthographicCameraController.h">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Renderer\Renderer.h">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Renderer\Renderer2D.h">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Renderer\RendererAPI.h">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Renderer\Shader.h">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Renderer\ShaderLibrary.h">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Renderer\SubTexture2D.h">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Renderer\Texture.h">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Renderer\VertexArray.h">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Scene\Components.h">
+      <Filter>src\Thunder\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Scene\EditorCamera.h">
+      <Filter>src\Thunder\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Scene\Entity.h">
+      <Filter>src\Thunder\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Scene\Scene.h">
+      <Filter>src\Thunder\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Scene\SceneCamera.h">
+      <Filter>src\Thunder\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Scene\SceneSerializer.h">
+      <Filter>src\Thunder\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Scene\ScriptableComponent.h">
+      <Filter>src\Thunder\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Utils\PlatformUtils.h">
+      <Filter>src\Thunder\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\td_pch.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\ImGuizmo\ImGuizmo.h">
+      <Filter>vendor\ImGuizmo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thunder\Scene\SceneState.h">
+      <Filter>src\Thunder\Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLContext.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLFramebuffer.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLRendererAPI.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLShader.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLTexture.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\OpenGLVertexArray.cpp">
+      <Filter>src\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
+      <Filter>src\Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsUtils.cpp">
+      <Filter>src\Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>src\Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Core\Application.cpp">
+      <Filter>src\Thunder\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Core\Config.cpp">
+      <Filter>src\Thunder\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Core\GUID.cpp">
+      <Filter>src\Thunder\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Core\Input.cpp">
+      <Filter>src\Thunder\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Core\Layer.cpp">
+      <Filter>src\Thunder\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Core\LayerStack.cpp">
+      <Filter>src\Thunder\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Core\Log.cpp">
+      <Filter>src\Thunder\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Debug\Profiling.cpp">
+      <Filter>src\Thunder\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\ImGui\ImGuiBuild.cpp">
+      <Filter>src\Thunder\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\ImGui\ImGuiConfig.cpp">
+      <Filter>src\Thunder\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\ImGui\ImGuiLayer.cpp">
+      <Filter>src\Thunder\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Projects\ProjectSerializer.cpp">
+      <Filter>src\Thunder\Projects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Renderer\Buffer.cpp">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Renderer\Framebuffer.cpp">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Renderer\OrthographicCamera.cpp">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Renderer\OrthographicCameraController.cpp">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Renderer\Renderer.cpp">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Renderer\Renderer2D.cpp">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Renderer\Shader.cpp">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Renderer\ShaderLibrary.cpp">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Renderer\SubTexture2D.cpp">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Renderer\Texture.cpp">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Renderer\VertexArray.cpp">
+      <Filter>src\Thunder\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Scene\EditorCamera.cpp">
+      <Filter>src\Thunder\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Scene\Entity.cpp">
+      <Filter>src\Thunder\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Scene\Scene.cpp">
+      <Filter>src\Thunder\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Scene\SceneCamera.cpp">
+      <Filter>src\Thunder\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Thunder\Scene\SceneSerializer.cpp">
+      <Filter>src\Thunder\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\td_pch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="vendor\ImGuizmo\ImGuizmo.cpp">
+      <Filter>vendor\ImGuizmo</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
